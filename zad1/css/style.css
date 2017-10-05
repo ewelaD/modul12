@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+}
+#get-joke {
+	font-size: 20px;
+	color: #661141;
+}
+#joke {
+	color: #440026;
+}

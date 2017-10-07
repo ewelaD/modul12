@@ -26,3 +26,11 @@ body {
 #countries {
 	list-style: none;
 }
+@media(max-width: 767px) {
+	body{
+		background-size: contain;
+	}
+	.btn-search {
+		margin-bottom: 20px;
+	}
+}

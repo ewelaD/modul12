@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Pangolin');
+* {
+	box-sizing: border-box;	
+}
+body {
+	font-family: 'Pangolin', cursive;
+	color: #162856;
+	background-image: url(https://images.unsplash.com/photo-1478809846154-d4ca173df3e0?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=3f94ce8d3740e8df453c8a726bb1859d);
+	background-size: cover;
+	text-align: center;
+}
+.container {
+	margin: 50px 100px;
+}
+.btn-search {
+	color: #061539;
+	padding: 5px 15px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.country-name {
+	padding: 5px 15px;
+	border-radius: 5px;
+	border: 0;
+}
+#countries {
+	list-style: none;
+}
+@media(max-width: 767px) {
+	body{
+		background-size: contain;
+	}
+	.btn-search {
+		margin-bottom: 20px;
+	}
+}

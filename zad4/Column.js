@@ -3,16 +3,6 @@ function Column(id, name) {
 	this.id = id;
 	this.name = name;
 	this.element = createColumn();
-	deleteColumn: function() {
-    	var self = this;
-    	$.ajax({
-      		url: baseUrl + '/column/' + self.id,
-      		method: 'DELETE',
-      		success: function(response){
-        		self.element.remove();
-      		}
-    	});
- 	}
 	function createColumn() {
 		// TWORZENIE NOWYCH WĘZŁÓW
 		var column = $('<div class="column"></div>');
@@ -56,6 +46,13 @@ Column.prototype = {
 	  this.element.children('ul').append(card.element);
 	},
 	deleteColumn: function() {
-	  this.element.remove();
-	}
+    	var self = this;
+    	$.ajax({
+      		url: baseUrl + '/column/' + self.id,
+      		method: 'DELETE',
+      		success: function(response){
+        		self.element.remove();
+      		}
+    	});
+ 	}
 };
